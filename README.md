@@ -1,20 +1,20 @@
 # AbsaUGDTMicrosrvcGateway
 
-This application was generated using JHipster 8.0.0-beta.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.0.0-beta.1](https://www.jhipster.tech/documentation-archive/v8.0.0-beta.1).
+This application was generated using Registry 8.0.0-beta.1, you can find documentation and help at [https://www.Registry.tech/documentation-archive/v8.0.0-beta.1](https://www.Registry.tech/documentation-archive/v8.0.0-beta.1).
 
-This is a "gateway" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
-This application is configured for Service Discovery and Configuration with the JHipster-Registry. On launch, it will refuse to start if it is not able to connect to the JHipster-Registry at [http://localhost:8761](http://localhost:8761). For more information, read our documentation on [Service Discovery and Configuration with the JHipster-Registry][].
+This is a "gateway" application intended to be part of a microservice architecture, please refer to the [Doing microservices with Registry][] page of the documentation for more information.
+This application is configured for Service Discovery and Configuration with the Registry-Registry. On launch, it will refuse to start if it is not able to connect to the Registry-Registry at [http://localhost:8761](http://localhost:8761). For more information, read our documentation on [Service Discovery and Configuration with the Registry-Registry][].
 
 ## Project Structure
 
 Node is required for generation and recommended for development. `package.json` is always generated for a better development experience with prettier, commit hooks, scripts and so on.
 
-In the project root, JHipster generates configuration files for tools like git, prettier, eslint, husky, and others that are well known and you can find references in the web.
+In the project root, Registry generates configuration files for tools like git, prettier, eslint, husky, and others that are well known and you can find references in the web.
 
 `/src/*` structure follows default Java structure.
 
 - `.yo-rc.json` - Yeoman configuration file
-  JHipster configuration is stored in this file at `generator-jhipster` key. You may find `generator-jhipster-*` for specific blueprints configuration.
+  Registry configuration is stored in this file at `generator-jhipster` key. You may find `generator-jhipster-*` for specific blueprints configuration.
 - `.yo-resolve` (optional) - Yeoman conflict resolver
   Allows to use a specific action when conflicts are found skipping prompts for files that matches a pattern. Each line should match `[pattern] [action]` with pattern been a [Minimatch](https://github.com/isaacs/minimatch#minimatch) pattern and action been one of skip (default if ommited) or force. Lines starting with `#` are considered comments and are ignored.
 - `.jhipster/*.json` - JHipster entity configuration files
