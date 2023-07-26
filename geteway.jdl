@@ -2,7 +2,7 @@
 entity  AmolDTransactions
 {
     absaTranRef UUID unique,
-    billerId String,
+    abillerId String,
     dtDTransactionId String  ,
     amolDTransactionId String,
     transactionReferenceNumber String,
@@ -107,7 +107,7 @@ entity  AmolDTransactions
 
 entity Customer {
     absaTranRef UUID unique,
-    billerId String required ,
+   cbillerId String required ,
     paymentItemCode String required,
     dtDTransactionId String  ,
     amolDTransactionId String,
@@ -170,7 +170,7 @@ entity Customer {
 
 entity AccountDetails {
     absaTranRef UUID unique,
-    billerId String required ,
+    acbillerId String required ,
     paymentItemCode String required,
     dtDTransactionId String  ,
     amolDTransactionId String,
@@ -234,7 +234,7 @@ entity AccountDetails {
 entity DTransaction
 {
     absaTranRef UUID unique,
-    billerId String required ,
+    tbillerId String required ,
     paymentItemCode String required,
     dtDTransactionId String  ,
     amolDTransactionId String,
@@ -377,7 +377,7 @@ entity BlockedAccounts
 
 entity DTransactionDetails {
     absaTranRef UUID unique,
-    billerId String required ,
+    tdbillerId String required ,
     paymentItemCode String required,
     dtDTransactionId String  ,
     amolDTransactionId String,
@@ -554,7 +554,7 @@ entity Branch {
 
 entity Biller {
     absaTranRef UUID unique,
-    billerId String required ,
+    b String required ,
     billerCode String required,
     billerName String,
     billerCategoryId String,
@@ -655,7 +655,7 @@ entity PaymentItems
     absaTranRef UUID unique,
     recordId String   ,
     productCategoryId Integer ,
-    billerId Integer ,
+    pbillerId Integer ,
     paymentItemCode String,
     paymentItemId   Integer,
     paymentItemName String,
@@ -699,7 +699,7 @@ entity PaymentItems
 
 entity DTransactionChannel {
     absaTranRef UUID unique,
-    billerId String required ,
+   tcbillerId String required ,
     paymentItemCode String required,
     dtDTransactionId String  ,
     transactionReferenceNumber String,
@@ -967,7 +967,7 @@ entity Liquidation
 
 entity DTransactionSummary {
     absaTranRef UUID unique,
-    billerId String required ,
+    tsbillerId String required ,
     paymentItemCode String required,
     dtDTransactionId String  ,
     transactionReferenceNumber String,
@@ -993,8 +993,8 @@ entity DTransactionSummary {
 
 entity ErrorCodes{
     absaTranRef UUID unique,
-    recordId String required ,
-    paymentItemCode String required,
+    recordId String  ,
+    paymentItemCode String ,
     dtDTransactionId String  ,
     transactionReferenceNumber String,
     externalTranid String,
