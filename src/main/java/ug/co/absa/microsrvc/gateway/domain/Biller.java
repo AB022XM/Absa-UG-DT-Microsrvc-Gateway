@@ -128,15 +128,6 @@ public class Biller implements Serializable {
     @Column("updated_by")
     private String updatedBy;
 
-    @Transient
-    @Transient
-    @JsonIgnoreProperties(value = { "billerAccounts", "biller" }, allowSetters = true)
-    private Set<BillerAccount> billers = new HashSet<>();
-
-    @Transient
-    @Transient
-    @JsonIgnoreProperties(value = { "biller" }, allowSetters = true)
-    private Set<PaymentItems> billers = new HashSet<>();
 
     @Transient
     @JsonIgnoreProperties(value = { "billerAccounts", "biller" }, allowSetters = true)
@@ -589,67 +580,6 @@ public class Biller implements Serializable {
         this.updatedBy = updatedBy;
     }
 
-    public Set<BillerAccount> getBillers() {
-        return this.billers;
-    }
-
-    public void setBillers(Set<BillerAccount> billerAccounts) {
-        if (this.billers != null) {
-            this.billers.forEach(i -> i.setBiller(null));
-        }
-        if (billerAccounts != null) {
-            billerAccounts.forEach(i -> i.setBiller(this));
-        }
-        this.billers = billerAccounts;
-    }
-
-    public Biller billers(Set<BillerAccount> billerAccounts) {
-        this.setBillers(billerAccounts);
-        return this;
-    }
-
-    public Biller addBiller(BillerAccount billerAccount) {
-        this.billers.add(billerAccount);
-        billerAccount.setBiller(this);
-        return this;
-    }
-
-    public Biller removeBiller(BillerAccount billerAccount) {
-        this.billers.remove(billerAccount);
-        billerAccount.setBiller(null);
-        return this;
-    }
-
-    public Set<PaymentItems> getBillers() {
-        return this.billers;
-    }
-
-    public void setBillers(Set<PaymentItems> paymentItems) {
-        if (this.billers != null) {
-            this.billers.forEach(i -> i.setBiller(null));
-        }
-        if (paymentItems != null) {
-            paymentItems.forEach(i -> i.setBiller(this));
-        }
-        this.billers = paymentItems;
-    }
-
-    public Biller billers(Set<PaymentItems> paymentItems) {
-        this.setBillers(paymentItems);
-        return this;
-    }
-
-    public Biller addBiller(PaymentItems paymentItems) {
-        this.billers.add(paymentItems);
-        paymentItems.setBiller(this);
-        return this;
-    }
-
-    public Biller removeBiller(PaymentItems paymentItems) {
-        this.billers.remove(paymentItems);
-        paymentItems.setBiller(null);
-        return this;
-    }
 
     public BillerAccount getBillerAccount() {
         return this.billerAccount;
