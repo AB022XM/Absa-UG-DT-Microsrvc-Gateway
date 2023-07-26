@@ -1,0 +1,62 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "incomingJSONRequest": {
+      "home": {
+        "title": "Incoming JSON Requests",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Incoming JSON Request",
+        "createOrEditLabel": "Create or edit a Incoming JSON Request",
+        "search": "Search for Incoming JSON Request",
+        "notFound": "No Incoming JSON Requests found"
+      },
+      "created": "A new Incoming JSON Request is created with identifier {{ param }}",
+      "updated": "A Incoming JSON Request is updated with identifier {{ param }}",
+      "deleted": "A Incoming JSON Request is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Incoming JSON Request {{ id }}?"
+      },
+      "detail": {
+        "title": "Incoming JSON Request"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "amolDTransactionId": "Amol D Transaction Id",
+      "transactionReferenceNumber": "Transaction Reference Number",
+      "token": "Token",
+      "transactionId": "Transaction Id",
+      "fromEndpoint": "From Endpoint",
+      "toEndpoint": "To Endpoint",
+      "requestJson": "Request Json",
+      "requestType": "Request Type",
+      "requestDescription": "Request Description",
+      "requestStatus": "Request Status",
+      "additionalInfo": "Additional Info",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField7": "Free Field 7",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "freeField14": "Free Field 14",
+      "freeField15": "Free Field 15",
+      "freeField16": "Free Field 16",
+      "freeField17": "Free Field 17",
+      "freeField18": "Free Field 18",
+      "freeField19": "Free Field 19",
+      "freeField20": "Free Field 20",
+      "timestamp": "Timestamp",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

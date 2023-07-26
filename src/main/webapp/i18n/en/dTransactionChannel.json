@@ -1,0 +1,65 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "dTransactionChannel": {
+      "home": {
+        "title": "D Transaction Channels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new D Transaction Channel",
+        "createOrEditLabel": "Create or edit a D Transaction Channel",
+        "search": "Search for D Transaction Channel",
+        "notFound": "No D Transaction Channels found"
+      },
+      "created": "A new D Transaction Channel is created with identifier {{ param }}",
+      "updated": "A D Transaction Channel is updated with identifier {{ param }}",
+      "deleted": "A D Transaction Channel is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete D Transaction Channel {{ id }}?"
+      },
+      "detail": {
+        "title": "D Transaction Channel"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "billerId": "Biller Id",
+      "paymentItemCode": "Payment Item Code",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "transactionReferenceNumber": "Transaction Reference Number",
+      "externalTranid": "External Tranid",
+      "channelCode": "Channel Code",
+      "channelName": "Channel Name",
+      "channelDescription": "Channel Description",
+      "timestamp": "Timestamp",
+      "chanelFreeText": "Chanel Free Text",
+      "chanelFreeText1": "Chanel Free Text 1",
+      "chanelFreeText2": "Chanel Free Text 2",
+      "chanelFreeText3": "Chanel Free Text 3",
+      "chanelFreeText4": "Chanel Free Text 4",
+      "chanelFreeText5": "Chanel Free Text 5",
+      "chanelFreeText6": "Chanel Free Text 6",
+      "chanelFreeText7": "Chanel Free Text 7",
+      "chanelFreeText8": "Chanel Free Text 8",
+      "chanelFreeText9": "Chanel Free Text 9",
+      "chanelFreeText10": "Chanel Free Text 10",
+      "chanelFreeText11": "Chanel Free Text 11",
+      "chanelFreeText12": "Chanel Free Text 12",
+      "chanelFreeText13": "Chanel Free Text 13",
+      "chanelFreeText14": "Chanel Free Text 14",
+      "chanelFreeText15": "Chanel Free Text 15",
+      "chanelFreeText16": "Chanel Free Text 16",
+      "chanelFreeText17": "Chanel Free Text 17",
+      "chanelFreeText18": "Chanel Free Text 18",
+      "chanelFreeText19": "Chanel Free Text 19",
+      "chanelFreeText20": "Chanel Free Text 20",
+      "chanelFreeText21": "Chanel Free Text 21",
+      "chanelFreeText22": "Chanel Free Text 22",
+      "chanelFreeText23": "Chanel Free Text 23",
+      "chanelFreeText24": "Chanel Free Text 24",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "delflg": "Delflg",
+      "dTransaction": "D Transaction"
+    }
+  }
+}

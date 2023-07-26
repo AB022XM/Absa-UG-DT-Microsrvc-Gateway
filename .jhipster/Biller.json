@@ -1,0 +1,172 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215006",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "biller",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "billerId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "billerCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "billerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billerCategoryId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addressId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narative7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "freeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delflg",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Biller",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "billerAccount",
+      "otherEntityRelationshipName": "biller",
+      "relationshipName": "biller",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "paymentItems",
+      "otherEntityRelationshipName": "biller",
+      "relationshipName": "biller",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "billerAccount",
+      "otherEntityRelationshipName": "billerAccount",
+      "relationshipName": "billerAccount",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

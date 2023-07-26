@@ -1,0 +1,176 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215026",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "incoming_json_response",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "dtDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amolDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionReferenceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "token",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responseId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responseJson",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "responseType",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "responseDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "responseStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "additionalInfo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "exceptionMessage",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField14",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField15",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "freeField16",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField17",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField18",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "freeField19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "IncomingJSONResponse",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

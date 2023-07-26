@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity DTransactionSummary.
+    -->
+    <changeSet id="20230725215016-1" author="jhipster">
+        <createTable tableName="d_transaction_summary">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="absa_tran_ref" type="${uuidType}">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_d_transaction_summary__absa_tran_ref" />
+            </column>
+            <column name="biller_id" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="payment_item_code" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="dt_d_transaction_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="transaction_reference_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="record_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="transaction_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="transaction_type" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="transaction_amount" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="transaction_date" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="transaction_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_field_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_field_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_field_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_field_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_field_5" type="${clobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_field_6" type="${blobType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_field_6_content_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_at" type="${datetimeType}">
+                <constraints nullable="false" />
+            </column>
+            <column name="created_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="updated_at" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="updated_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="error_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="error_message" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="customer_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="d_transaction_summary" columnName="transaction_date" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="d_transaction_summary" columnName="created_at" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="d_transaction_summary" columnName="updated_at" columnDataType="${datetimeType}"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230725215016-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/d_transaction_summary.csv"
+                  separator=";"
+                  tableName="d_transaction_summary"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="absa_tran_ref" type="${uuidType}"/>
+            <column name="biller_id" type="string"/>
+            <column name="payment_item_code" type="string"/>
+            <column name="dt_d_transaction_id" type="string"/>
+            <column name="transaction_reference_number" type="string"/>
+            <column name="record_id" type="string"/>
+            <column name="transaction_id" type="string"/>
+            <column name="transaction_type" type="string"/>
+            <column name="transaction_amount" type="string"/>
+            <column name="transaction_date" type="date"/>
+            <column name="transaction_status" type="string"/>
+            <column name="free_field_1" type="string"/>
+            <column name="free_field_2" type="string"/>
+            <column name="free_field_3" type="string"/>
+            <column name="free_field_4" type="string"/>
+            <column name="free_field_5" type="clob"/>
+            <column name="free_field_6" type="blob"/>
+            <column name="free_field_6_content_type" type="string"/>
+            <column name="created_at" type="date"/>
+            <column name="created_by" type="string"/>
+            <column name="updated_at" type="date"/>
+            <column name="updated_by" type="string"/>
+            <column name="error_code" type="string"/>
+            <column name="error_message" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

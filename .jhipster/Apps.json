@@ -1,0 +1,133 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215019",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "apps",
+  "fields": [
+    {
+      "fieldName": "recordId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "configId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "appId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "appCurrentVersion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "appName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "appDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "appStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField1",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField2",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delflg",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedby",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Apps",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "appConfig",
+      "otherEntityRelationshipName": "apps",
+      "relationshipName": "app",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

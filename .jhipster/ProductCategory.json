@@ -1,0 +1,113 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215008",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "product_category",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "billerId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recordId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productCategoryCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "productCategoryName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "productCategoryDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productCategoryImage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField2",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "productFreeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productFreeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delflg",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProductCategory",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

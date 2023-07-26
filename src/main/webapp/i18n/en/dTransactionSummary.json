@@ -1,0 +1,48 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "dTransactionSummary": {
+      "home": {
+        "title": "D Transaction Summaries",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new D Transaction Summary",
+        "createOrEditLabel": "Create or edit a D Transaction Summary",
+        "search": "Search for D Transaction Summary",
+        "notFound": "No D Transaction Summaries found"
+      },
+      "created": "A new D Transaction Summary is created with identifier {{ param }}",
+      "updated": "A D Transaction Summary is updated with identifier {{ param }}",
+      "deleted": "A D Transaction Summary is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete D Transaction Summary {{ id }}?"
+      },
+      "detail": {
+        "title": "D Transaction Summary"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "billerId": "Biller Id",
+      "paymentItemCode": "Payment Item Code",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "transactionReferenceNumber": "Transaction Reference Number",
+      "recordId": "Record Id",
+      "transactionId": "Transaction Id",
+      "transactionType": "Transaction Type",
+      "transactionAmount": "Transaction Amount",
+      "transactionDate": "Transaction Date",
+      "transactionStatus": "Transaction Status",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "errorCode": "Error Code",
+      "errorMessage": "Error Message",
+      "customer": "Customer"
+    }
+  }
+}

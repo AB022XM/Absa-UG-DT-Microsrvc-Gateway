@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity DTransactionChannel.
+    -->
+    <changeSet id="20230725215010-1" author="jhipster">
+        <createTable tableName="d_transaction_channel">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="absa_tran_ref" type="${uuidType}">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_d_transaction_channel__absa_tran_ref" />
+            </column>
+            <column name="biller_id" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="payment_item_code" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="dt_d_transaction_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="transaction_reference_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="external_tranid" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="channel_code" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="channel_name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="channel_description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="timestamp" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_5" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_6" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_7" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_8" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_9" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_10" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_11" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_12" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_13" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_14" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_15" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_16" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_17" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_18" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_19" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_20" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_21" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_22" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_23" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="chanel_free_text_24" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_at" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="updated_at" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="updated_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="delflg" type="boolean">
+                <constraints nullable="true" />
+            </column>
+            <column name="d_transaction_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="d_transaction_channel" columnName="timestamp" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="d_transaction_channel" columnName="created_at" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="d_transaction_channel" columnName="updated_at" columnDataType="${datetimeType}"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230725215010-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/d_transaction_channel.csv"
+                  separator=";"
+                  tableName="d_transaction_channel"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="absa_tran_ref" type="${uuidType}"/>
+            <column name="biller_id" type="string"/>
+            <column name="payment_item_code" type="string"/>
+            <column name="dt_d_transaction_id" type="string"/>
+            <column name="transaction_reference_number" type="string"/>
+            <column name="external_tranid" type="string"/>
+            <column name="channel_code" type="string"/>
+            <column name="channel_name" type="string"/>
+            <column name="channel_description" type="string"/>
+            <column name="timestamp" type="date"/>
+            <column name="chanel_free_text" type="string"/>
+            <column name="chanel_free_text_1" type="string"/>
+            <column name="chanel_free_text_2" type="string"/>
+            <column name="chanel_free_text_3" type="string"/>
+            <column name="chanel_free_text_4" type="string"/>
+            <column name="chanel_free_text_5" type="string"/>
+            <column name="chanel_free_text_6" type="string"/>
+            <column name="chanel_free_text_7" type="string"/>
+            <column name="chanel_free_text_8" type="string"/>
+            <column name="chanel_free_text_9" type="string"/>
+            <column name="chanel_free_text_10" type="string"/>
+            <column name="chanel_free_text_11" type="string"/>
+            <column name="chanel_free_text_12" type="string"/>
+            <column name="chanel_free_text_13" type="string"/>
+            <column name="chanel_free_text_14" type="string"/>
+            <column name="chanel_free_text_15" type="string"/>
+            <column name="chanel_free_text_16" type="string"/>
+            <column name="chanel_free_text_17" type="string"/>
+            <column name="chanel_free_text_18" type="string"/>
+            <column name="chanel_free_text_19" type="string"/>
+            <column name="chanel_free_text_20" type="string"/>
+            <column name="chanel_free_text_21" type="string"/>
+            <column name="chanel_free_text_22" type="string"/>
+            <column name="chanel_free_text_23" type="string"/>
+            <column name="chanel_free_text_24" type="string"/>
+            <column name="created_at" type="date"/>
+            <column name="created_by" type="string"/>
+            <column name="updated_at" type="date"/>
+            <column name="updated_by" type="string"/>
+            <column name="delflg" type="boolean"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

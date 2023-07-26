@@ -1,0 +1,66 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "genericConfigs": {
+      "home": {
+        "title": "Generic Configs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Generic Configs",
+        "createOrEditLabel": "Create or edit a Generic Configs",
+        "search": "Search for Generic Configs",
+        "notFound": "No Generic Configs found"
+      },
+      "created": "A new Generic Configs is created with identifier {{ param }}",
+      "updated": "A Generic Configs is updated with identifier {{ param }}",
+      "deleted": "A Generic Configs is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Generic Configs {{ id }}?"
+      },
+      "detail": {
+        "title": "Generic Configs"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "recordId": "Record Id",
+      "configId": "Config Id",
+      "configName": "Config Name",
+      "configsDetails": "Configs Details",
+      "additionalConfigs": "Additional Configs",
+      "freeField": "Free Field",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "freeField14": "Free Field 14",
+      "freeField15": "Free Field 15",
+      "freeField16": "Free Field 16",
+      "freeField17": "Free Field 17",
+      "freeField18": "Free Field 18",
+      "freeField19": "Free Field 19",
+      "freeField20": "Free Field 20",
+      "freeField21": "Free Field 21",
+      "freeField22": "Free Field 22",
+      "freeField23": "Free Field 23",
+      "freeField24": "Free Field 24",
+      "freeField25": "Free Field 25",
+      "freeField26": "Free Field 26",
+      "freeField27": "Free Field 27",
+      "freeField28": "Free Field 28",
+      "freeField29": "Free Field 29",
+      "freeField30": "Free Field 30",
+      "freeField31": "Free Field 31",
+      "freeField32": "Free Field 32",
+      "freeField33": "Free Field 33",
+      "freeField34": "Free Field 34",
+      "timestamp": "Timestamp",
+      "recordStatus": "Record Status"
+    }
+  }
+}

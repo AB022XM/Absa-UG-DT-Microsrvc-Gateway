@@ -1,0 +1,63 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "branch": {
+      "home": {
+        "title": "Branches",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Branch",
+        "createOrEditLabel": "Create or edit a Branch",
+        "search": "Search for Branch",
+        "notFound": "No Branches found"
+      },
+      "created": "A new Branch is created with identifier {{ param }}",
+      "updated": "A Branch is updated with identifier {{ param }}",
+      "deleted": "A Branch is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Branch {{ id }}?"
+      },
+      "detail": {
+        "title": "Branch"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "recordId": "Record Id",
+      "addressId": "Address Id",
+      "bankId": "Bank Id",
+      "branchId": "Branch Id",
+      "branchName": "Branch Name",
+      "branchSwiftCode": "Branch Swift Code",
+      "branchPhoneNumber": "Branch Phone Number",
+      "branchEmail": "Branch Email",
+      "branchFreeField1": "Branch Free Field 1",
+      "branchFreeField3": "Branch Free Field 3",
+      "branchFreeField4": "Branch Free Field 4",
+      "branchFreeField5": "Branch Free Field 5",
+      "branchFreeField6": "Branch Free Field 6",
+      "branchFreeField7": "Branch Free Field 7",
+      "branchFreeField8": "Branch Free Field 8",
+      "branchFreeField9": "Branch Free Field 9",
+      "branchFreeField10": "Branch Free Field 10",
+      "branchFreeField11": "Branch Free Field 11",
+      "branchFreeField12": "Branch Free Field 12",
+      "branchFreeField13": "Branch Free Field 13",
+      "branchFreeField14": "Branch Free Field 14",
+      "branchFreeField15": "Branch Free Field 15",
+      "branchFreeField16": "Branch Free Field 16",
+      "branchFreeField17": "Branch Free Field 17",
+      "branchFreeField18": "Branch Free Field 18",
+      "branchFreeField19": "Branch Free Field 19",
+      "branchFreeField20": "Branch Free Field 20",
+      "branchFreeField21": "Branch Free Field 21",
+      "branchFreeField22": "Branch Free Field 22",
+      "branchFreeField23": "Branch Free Field 23",
+      "branchFreeField24": "Branch Free Field 24",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "timestamp": "Timestamp",
+      "status": "Status",
+      "bank": "Bank"
+    }
+  }
+}

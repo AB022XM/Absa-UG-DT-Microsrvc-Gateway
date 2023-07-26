@@ -1,0 +1,67 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "blockedAccounts": {
+      "home": {
+        "title": "Blocked Accounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Blocked Accounts",
+        "createOrEditLabel": "Create or edit a Blocked Accounts",
+        "search": "Search for Blocked Accounts",
+        "notFound": "No Blocked Accounts found"
+      },
+      "created": "A new Blocked Accounts is created with identifier {{ param }}",
+      "updated": "A Blocked Accounts is updated with identifier {{ param }}",
+      "deleted": "A Blocked Accounts is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Blocked Accounts {{ id }}?"
+      },
+      "detail": {
+        "title": "Blocked Accounts"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "customerId": "Customer Id",
+      "customerAccountNumber": "Customer Account Number",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "blockId": "Block Id",
+      "blockCode": "Block Code",
+      "blockDate": "Block Date",
+      "blockType": "Block Type",
+      "blockStatus": "Block Status",
+      "blockReason": "Block Reason",
+      "blockReasonCode1": "Block Reason Code 1",
+      "blockReasonCode2": "Block Reason Code 2",
+      "blockReason1": "Block Reason 1",
+      "blockReasonCode3": "Block Reason Code 3",
+      "blockReasonCode4": "Block Reason Code 4",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "isTemp": "Is Temp",
+      "blockFreeText": "Block Free Text",
+      "blockFreeText1": "Block Free Text 1",
+      "blockFreeText2": "Block Free Text 2",
+      "blockFreeText3": "Block Free Text 3",
+      "blockFreeText4": "Block Free Text 4",
+      "blockFreeText5": "Block Free Text 5",
+      "blockFreeText6": "Block Free Text 6",
+      "blockReasonCode5": "Block Reason Code 5",
+      "blockReasonCode6": "Block Reason Code 6",
+      "blockReasonCode7": "Block Reason Code 7",
+      "blockReasonCode8": "Block Reason Code 8",
+      "blockReasonCode9": "Block Reason Code 9",
+      "blockReasonCode10": "Block Reason Code 10",
+      "blockReasonCode11": "Block Reason Code 11",
+      "blockReasonCode12": "Block Reason Code 12",
+      "blockReasonCode13": "Block Reason Code 13",
+      "blockReasonCode14": "Block Reason Code 14",
+      "blockReasonCode15": "Block Reason Code 15",
+      "blockReasonCode16": "Block Reason Code 16",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "delflg": "Delflg",
+      "status": "Status"
+    }
+  }
+}

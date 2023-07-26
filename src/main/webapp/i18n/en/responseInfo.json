@@ -1,0 +1,49 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "responseInfo": {
+      "home": {
+        "title": "Response Infos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Response Info",
+        "createOrEditLabel": "Create or edit a Response Info",
+        "search": "Search for Response Info",
+        "notFound": "No Response Infos found"
+      },
+      "created": "A new Response Info is created with identifier {{ param }}",
+      "updated": "A Response Info is updated with identifier {{ param }}",
+      "deleted": "A Response Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Response Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Response Info"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "billerId": "Biller Id",
+      "paymentItemCode": "Payment Item Code",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "transactionReferenceNumber": "Transaction Reference Number",
+      "externalTranid": "External Tranid",
+      "responseCode": "Response Code",
+      "responseMessage": "Response Message",
+      "responseBody": "Response Body",
+      "timestamp": "Timestamp",
+      "requestRef": "Request Ref",
+      "status": "Status",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "time": "Time",
+      "errorCode": "Error Code",
+      "errorMessage": "Error Message",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

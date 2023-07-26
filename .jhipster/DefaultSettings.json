@@ -1,0 +1,165 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215027",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "default_settings",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "dtDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amolDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionReferenceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "token",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "thirdPartyDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultSettingCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jsonSettings",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "appConfig",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "appName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField14",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField15",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "freeField16",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField17",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField18",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "freeField19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "recordStatus",
+      "fieldType": "RecordStatus",
+      "fieldValues": "ACTIVE (active),INACTIVE (inactive),PENDING (pending),INITIATED (initiated),APPROVED (approved)"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedby",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DefaultSettings",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

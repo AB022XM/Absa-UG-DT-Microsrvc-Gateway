@@ -2,7 +2,7 @@
 entity  AmolDTransactions
 {
     absaTranRef UUID unique,
-    billerId String ,
+    billerId String,
     dtDTransactionId String  ,
     amolDTransactionId String,
     transactionReferenceNumber String,
@@ -32,9 +32,9 @@ entity  AmolDTransactions
     beneficiaryName String,
     beneficiaryAccount String,
     beneficiaryBranchId String,
-    BeneficiaryphoneNumber String,
-    TranStatus TranStatus ,
-    Narration1 String,
+    beneficiaryPhoneNumber String,
+    tranStatus TranStatus ,
+    narration1 String,
     narration2 String,
     narration3 String,
     taxAmount Integer,
@@ -408,7 +408,7 @@ entity DTransactionDetails {
     beneficiaryName String,
     beneficiaryAccount String,
     beneficiaryBranchId String,
-    BeneficiaryphoneNumber String,
+    beneficiaryPhoneNumber String,
     TranStatus TranStatus ,
     Narration1 String,
     narration2 String,
@@ -466,12 +466,12 @@ entity DTransactionDetails {
     externalErrorCode String,
 }
 
-entity Banks
+entity Bank
 {
     absaTranRef UUID unique,
     billerId String required ,
     paymentItemCode String required,
-    dtDTransactionId String  ,
+    dtDTransactionId String ,
     amolDTransactionId String,
     bankName String required,
     bankSwiftCode String required,
@@ -627,10 +627,10 @@ entity ProductCategory {
     absaTranRef UUID unique,
     billerId String ,
     recordId String   ,
-    ProductCategoryCode String required,
-    ProductCategoryName String required,
-    ProductCategoryDescription String,
-    ProductCategoryImage String,
+    productCategoryCode String required,
+    productCategoryName String required,
+    productCategoryDescription String,
+    productCategoryImage String,
     productFreeField1 String,
     productFreeField2 TextBlob,
     productFreeField3 String,
@@ -688,16 +688,13 @@ entity PaymentItems
     freeText16 String,
     freeText17 String,
     freeText18 String,
-    freeText19 String
+    freeText19 String,
     delflg Boolean,
     status String,
     createdAt ZonedDateTime,
     updatedAt ZonedDateTime,
     deletedAt ZonedDateTime,
-    deletedBy String,
-
-
-
+    deletedBy String
 }
 
 entity DTransactionChannel {
@@ -740,7 +737,7 @@ entity DTransactionChannel {
     createdBy String ,
     updatedAt ZonedDateTime ,
     updatedBy String
-    delflg Boolean,
+    delflg Boolean
 
 }
 
@@ -764,7 +761,7 @@ entity RequestInfo {
     createdAt ZonedDateTime required,
     createdBy String,
     updatedAt ZonedDateTime ,
-    updatedBy String,
+    updatedBy String
 
 }
 
@@ -807,7 +804,7 @@ enum ServiceLevel {
 
 entity CustomAuditHistory{
 
-    id Integer  ,
+    id UUID unique,
     recordId String   ,
     actionId ServiceLevel required,
     timestamp ZonedDateTime,
@@ -855,7 +852,7 @@ entity CustomAuditHistory{
     createdAt ZonedDateTime required,
     createdBy String,
     updatedAt ZonedDateTime ,
-    updatedBy String,
+    updatedBy String
 
 }
 
@@ -989,7 +986,7 @@ entity DTransactionSummary {
     createdAt ZonedDateTime required ,
     createdBy String ,
     updatedAt ZonedDateTime ,
-    updatedBy String
+    updatedBy String,
     errorCode ErrorCodes,
     errorMessage ErrorMessage
 }
@@ -1083,7 +1080,7 @@ entity DTransactionHistory {
     tranFreeField9 String,
     tranFreeField10 String,
     tranFreeField11 String,
-    tranFreeField12 String
+    tranFreeField12 String,
     createdAt ZonedDateTime ,
     createdBy String ,
     updatedAt ZonedDateTime ,
@@ -1191,7 +1188,7 @@ entity PaymentConfig{
     createdAt ZonedDateTime ,
     createdBy String ,
     updatedAt ZonedDateTime ,
-    updatedby String
+    updatedBy String
 
 
 }
@@ -1473,7 +1470,7 @@ entity Currency{
 
 entity Devices
 {
-    absaTranRef UUID unique,
+    absaTranRef UUID ,
     recordId String   ,
     deviceId String  ,
     deviceName String required,
@@ -1554,7 +1551,7 @@ enum TransferType
 
 relationship OneToMany {
     BillerAccount{billerAccount} to Biller
-    Banks{banks} to Branch
+    Bank{bank} to Branch
     Customer{customer} to DTransaction
     Customer{customer} to DTransactionSummary
     Customer{customer} to DTransactionDetails

@@ -1,0 +1,57 @@
+import dayjs from 'dayjs';
+import { ServiceLevel } from 'app/shared/model/enumerations/service-level.model';
+
+export interface ICustomAudit {
+  id?: number;
+  absaTranRef?: string | null;
+  recordId?: string | null;
+  actionId?: ServiceLevel;
+  timestamp?: string | null;
+  oldValue?: string | null;
+  newValue?: string | null;
+  changeResaon?: string | null;
+  description?: string | null;
+  description1?: string | null;
+  description2?: string | null;
+  description3?: string | null;
+  description4?: string | null;
+  description5?: string | null;
+  description6?: string | null;
+  description7?: string | null;
+  description8?: string | null;
+  description9?: string | null;
+  freeText1?: string | null;
+  freeText2?: string | null;
+  freeText3?: string | null;
+  freeText4?: string | null;
+  freeText5?: string | null;
+  freeText6?: string | null;
+  freeText7?: string | null;
+  freeText8?: string | null;
+  freeText9?: string | null;
+  freeText10?: string | null;
+  freeText11?: string | null;
+  freeText12?: string | null;
+  freeText13?: string | null;
+  freeText14?: string | null;
+  freeText15?: string | null;
+  freeText16?: string | null;
+  freeText17?: string | null;
+  freeText18?: string | null;
+  freeText19?: string | null;
+  freeText20?: string | null;
+  freeText21?: string | null;
+  freeText22?: string | null;
+  freeText23?: string | null;
+  freeText24?: string | null;
+  freeText25?: string | null;
+  freeText26?: string | null;
+  freeText27?: string | null;
+  freeText28?: string | null;
+  createdAt?: string;
+  createdBy?: string | null;
+  updatedAt?: string | null;
+  updatedBy?: string | null;
+}
+
+export const defaultValue: Readonly<ICustomAudit> = {};

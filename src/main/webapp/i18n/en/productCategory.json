@@ -1,0 +1,47 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "productCategory": {
+      "home": {
+        "title": "Product Categories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Product Category",
+        "createOrEditLabel": "Create or edit a Product Category",
+        "search": "Search for Product Category",
+        "notFound": "No Product Categories found"
+      },
+      "created": "A new Product Category is created with identifier {{ param }}",
+      "updated": "A Product Category is updated with identifier {{ param }}",
+      "deleted": "A Product Category is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Product Category {{ id }}?"
+      },
+      "detail": {
+        "title": "Product Category"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "billerId": "Biller Id",
+      "recordId": "Record Id",
+      "productCategoryCode": "Product Category Code",
+      "productCategoryName": "Product Category Name",
+      "productCategoryDescription": "Product Category Description",
+      "productCategoryImage": "Product Category Image",
+      "productFreeField1": "Product Free Field 1",
+      "productFreeField2": "Product Free Field 2",
+      "productFreeField3": "Product Free Field 3",
+      "productFreeField4": "Product Free Field 4",
+      "productFreeField5": "Product Free Field 5",
+      "productFreeField6": "Product Free Field 6",
+      "productFreeField7": "Product Free Field 7",
+      "productFreeField8": "Product Free Field 8",
+      "productFreeField9": "Product Free Field 9",
+      "productFreeField10": "Product Free Field 10",
+      "productFreeField11": "Product Free Field 11",
+      "delflg": "Delflg",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

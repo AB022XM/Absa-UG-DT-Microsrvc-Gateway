@@ -1,0 +1,51 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "apps": {
+      "home": {
+        "title": "Apps",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Apps",
+        "createOrEditLabel": "Create or edit a Apps",
+        "search": "Search for Apps",
+        "notFound": "No Apps found"
+      },
+      "created": "A new Apps is created with identifier {{ param }}",
+      "updated": "A Apps is updated with identifier {{ param }}",
+      "deleted": "A Apps is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Apps {{ id }}?"
+      },
+      "detail": {
+        "title": "Apps"
+      },
+      "id": "ID",
+      "recordId": "Record Id",
+      "configId": "Config Id",
+      "appId": "App Id",
+      "appCurrentVersion": "App Current Version",
+      "appName": "App Name",
+      "appDescription": "App Description",
+      "appStatus": "App Status",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField7": "Free Field 7",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "delflg": "Delflg",
+      "timestamp": "Timestamp",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedby": "Updatedby",
+      "app": "App"
+    }
+  }
+}

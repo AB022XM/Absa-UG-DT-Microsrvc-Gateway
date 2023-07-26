@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity AmolDTransactions.
+    -->
+    <changeSet id="20230725214958-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="d_transaction_id"
+                                 baseTableName="amol_d_transactions"
+                                 constraintName="fk_amol_d_transactions__d_transaction_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="d_transaction"/>
+    </changeSet>
+</databaseChangeLog>

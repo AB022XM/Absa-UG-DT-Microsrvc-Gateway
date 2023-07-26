@@ -1,0 +1,51 @@
+import dayjs from 'dayjs';
+import { ServiceLevel } from 'app/shared/model/enumerations/service-level.model';
+
+export interface ILiquidation {
+  id?: number;
+  recordId?: string | null;
+  serviceLevel?: ServiceLevel;
+  timestamp?: string;
+  partnerCode?: string;
+  amount?: string;
+  currency?: string;
+  receiverBankcode?: string;
+  receiverAccountNumber?: string;
+  beneficiaryName?: string;
+  instructionId?: string;
+  senderToReceiverInfo?: string;
+  freeText1?: string;
+  freeText2?: string;
+  freeText3?: string;
+  freeText4?: string;
+  freeText5?: string;
+  freeText6?: string;
+  freeText7?: string;
+  freeText8?: string;
+  freeText9?: string;
+  freeText10?: string;
+  freeText11?: string;
+  freeText12?: string;
+  freeText13?: string;
+  freeText14?: string;
+  freeText15?: string;
+  freeText16?: string;
+  freeText17?: string;
+  freeText18?: string;
+  freeText19?: string;
+  freeText20?: string;
+  freeText21?: string;
+  freeText22?: string;
+  freeText23?: string;
+  freeText24?: string;
+  freeText25?: string;
+  freeText26?: string;
+  freeText27?: string;
+  freeText28?: string;
+  createdAt?: string | null;
+  createdBy?: string | null;
+  updatedAt?: string | null;
+  updatedBy?: string | null;
+}
+
+export const defaultValue: Readonly<ILiquidation> = {};

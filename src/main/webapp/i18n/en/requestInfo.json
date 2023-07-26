@@ -1,0 +1,44 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "requestInfo": {
+      "home": {
+        "title": "Request Infos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Request Info",
+        "createOrEditLabel": "Create or edit a Request Info",
+        "search": "Search for Request Info",
+        "notFound": "No Request Infos found"
+      },
+      "created": "A new Request Info is created with identifier {{ param }}",
+      "updated": "A Request Info is updated with identifier {{ param }}",
+      "deleted": "A Request Info is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Request Info {{ id }}?"
+      },
+      "detail": {
+        "title": "Request Info"
+      },
+      "id": "ID",
+      "recordId": "Record Id",
+      "transactionId": "Transaction Id",
+      "requestData": "Request Data",
+      "paramList": "Param List",
+      "timestamp": "Timestamp",
+      "requestRef": "Request Ref",
+      "status": "Status",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "time": "Time",
+      "errorCode": "Error Code",
+      "errorMessage": "Error Message",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

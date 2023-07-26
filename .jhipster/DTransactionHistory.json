@@ -1,0 +1,266 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215018",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "d_transaction_history",
+  "fields": [
+    {
+      "fieldName": "recordId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transferId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentChannelCode",
+      "fieldType": "Channel",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ATM,CDM,POS,INTERNET_BANKING,MOBILE_BANKING"
+    },
+    {
+      "fieldName": "debitAccountNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "creditAccountNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "debitAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "creditAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "transactionAmount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "debitDate",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "creditDate",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "TranStatus",
+      "fieldValues": "PENDING,SUCCESS,FAILED,UNKNOWN"
+    },
+    {
+      "fieldName": "settlementDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "debitCurrency",
+      "fieldType": "Currency",
+      "fieldValues": "UGX (ugx),USD (usd),EUR (eur),GBP (gbp),AUD (aud),CNY (cny),JPY (jpy),CHF (chf),CZK (czk)"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "payerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "payerAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "payerEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "payerPhoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "payerNarration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "payerBranchId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryBranchId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "beneficiaryPhoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranStatus",
+      "fieldType": "TranStatus",
+      "fieldValues": "PENDING,SUCCESS,FAILED,UNKNOWN"
+    },
+    {
+      "fieldName": "narration1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narration2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "narration3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modeOfPayment",
+      "fieldType": "ModeOfPayment",
+      "fieldValues": "CASH,RTGS,INTERNAL_TRANSFER,CARD,BANK_TRANSFER,PAYMENT_CARD,PAYMENT_BANK_TRANSFER"
+    },
+    {
+      "fieldName": "retries",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "posted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "apiId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apiVersion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postingApi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isPosted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "postedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postedDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "internalErrorCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalErrorCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DTransactionHistory",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "customer",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

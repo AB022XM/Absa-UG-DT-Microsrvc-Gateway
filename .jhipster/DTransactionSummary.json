@@ -1,0 +1,127 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215016",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "d_transaction_summary",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "billerId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentItemCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dtDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionReferenceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "recordId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionType",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "transactionAmount",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "transactionStatus",
+      "fieldType": "TranStatus",
+      "fieldValues": "PENDING,SUCCESS,FAILED,UNKNOWN"
+    },
+    {
+      "fieldName": "freeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeField5",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "freeField6",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "errorCode",
+      "fieldType": "ErrorCodes",
+      "fieldValues": "SUCCESS (00),PENDING (01),UNKNOWN (99),FAILED (101),INVALIDACCOUNT (105),INVALIDBILLERCODE (106),INVALIDINVALIDAMOUNT (107),INVALIDPAYMENTTYPE (108),INVALIDPAYMENTMETHOD (109),INVALID_DEVICE_ID (110)"
+    },
+    {
+      "fieldName": "errorMessage",
+      "fieldType": "ErrorMessage",
+      "fieldValues": "TRANSACTIONSUCCESS ((DTransaction suceessfully processed),TRANSACTIONFAILED (DTransaction failed ),TRANSACTIONPENDING (DTransaction pending ),TRANSACTIONINITIATED (DTransaction initiated ),TRANSACTIONAPPROVED (DTransaction approved ),TRANSACTIONUNKNOWN (DTransaction unknown !),TRANSACTIONINVALIDACCOUNT (Invalid account !),TRANSACTIONINVALIDBILLERCODE (Invalid biller code !),TRANSACTIONINVALIDINVALIDAMOUNT (Invalid invalid amount !),TRANSACTIONINVALIDPAYMENTTYPE (Invalid payment type !),TRANSACTIONINVALIDPAYMENTMETHOD (Invalid payment method !),TRANSACTIONINVALIDDEVICEID (Invalid device id !),TRANSACTIONUNKNOWNERROR (Unknown error)"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DTransactionSummary",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "customer",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

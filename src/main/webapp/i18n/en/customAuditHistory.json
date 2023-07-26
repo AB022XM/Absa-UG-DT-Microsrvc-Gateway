@@ -1,0 +1,72 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "customAuditHistory": {
+      "home": {
+        "title": "Custom Audit Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Custom Audit History",
+        "createOrEditLabel": "Create or edit a Custom Audit History",
+        "search": "Search for Custom Audit History",
+        "notFound": "No Custom Audit Histories found"
+      },
+      "created": "A new Custom Audit History is created with identifier {{ param }}",
+      "updated": "A Custom Audit History is updated with identifier {{ param }}",
+      "deleted": "A Custom Audit History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Custom Audit History {{ id }}?"
+      },
+      "detail": {
+        "title": "Custom Audit History"
+      },
+      "id": "Id",
+      "recordId": "Record Id",
+      "actionId": "Action Id",
+      "timestamp": "Timestamp",
+      "oldValue": "Old Value",
+      "newValue": "New Value",
+      "changeReason": "Change Reason",
+      "description": "Description",
+      "description1": "Description 1",
+      "description2": "Description 2",
+      "description3": "Description 3",
+      "description4": "Description 4",
+      "description5": "Description 5",
+      "description6": "Description 6",
+      "description7": "Description 7",
+      "description8": "Description 8",
+      "description9": "Description 9",
+      "freeText1": "Free Text 1",
+      "freeText2": "Free Text 2",
+      "freeText3": "Free Text 3",
+      "freeText4": "Free Text 4",
+      "freeText5": "Free Text 5",
+      "freeText6": "Free Text 6",
+      "freeText7": "Free Text 7",
+      "freeText8": "Free Text 8",
+      "freeText9": "Free Text 9",
+      "freeText10": "Free Text 10",
+      "freeText11": "Free Text 11",
+      "freeText12": "Free Text 12",
+      "freeText13": "Free Text 13",
+      "freeText14": "Free Text 14",
+      "freeText15": "Free Text 15",
+      "freeText16": "Free Text 16",
+      "freeText17": "Free Text 17",
+      "freeText18": "Free Text 18",
+      "freeText19": "Free Text 19",
+      "freeText20": "Free Text 20",
+      "freeText21": "Free Text 21",
+      "freeText22": "Free Text 22",
+      "freeText23": "Free Text 23",
+      "freeText24": "Free Text 24",
+      "freeText25": "Free Text 25",
+      "freeText26": "Free Text 26",
+      "freeText27": "Free Text 27",
+      "freeText28": "Free Text 28",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

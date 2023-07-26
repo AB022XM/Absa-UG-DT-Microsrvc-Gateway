@@ -1,0 +1,60 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "biller": {
+      "home": {
+        "title": "Billers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Biller",
+        "createOrEditLabel": "Create or edit a Biller",
+        "search": "Search for Biller",
+        "notFound": "No Billers found"
+      },
+      "created": "A new Biller is created with identifier {{ param }}",
+      "updated": "A Biller is updated with identifier {{ param }}",
+      "deleted": "A Biller is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Biller {{ id }}?"
+      },
+      "detail": {
+        "title": "Biller"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "billerId": "Biller Id",
+      "billerCode": "Biller Code",
+      "billerName": "Biller Name",
+      "billerCategoryId": "Biller Category Id",
+      "addressId": "Address Id",
+      "narative": "Narative",
+      "narative1": "Narative 1",
+      "narative2": "Narative 2",
+      "narative3": "Narative 3",
+      "narative4": "Narative 4",
+      "narative5": "Narative 5",
+      "narative6": "Narative 6",
+      "narative7": "Narative 7",
+      "timestamp": "Timestamp",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField7": "Free Field 7",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "delflg": "Delflg",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "biller": "Biller",
+      "biller": "Biller",
+      "billerAccount": "Biller Account"
+    }
+  }
+}

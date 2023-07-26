@@ -1,0 +1,59 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "outgoingJSONResponse": {
+      "home": {
+        "title": "Outgoing JSON Responses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Outgoing JSON Response",
+        "createOrEditLabel": "Create or edit a Outgoing JSON Response",
+        "search": "Search for Outgoing JSON Response",
+        "notFound": "No Outgoing JSON Responses found"
+      },
+      "created": "A new Outgoing JSON Response is created with identifier {{ param }}",
+      "updated": "A Outgoing JSON Response is updated with identifier {{ param }}",
+      "deleted": "A Outgoing JSON Response is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Outgoing JSON Response {{ id }}?"
+      },
+      "detail": {
+        "title": "Outgoing JSON Response"
+      },
+      "id": "ID",
+      "recordId": "Record Id",
+      "responseId": "Response Id",
+      "transactionId": "Transaction Id",
+      "responseJson": "Response Json",
+      "responseType": "Response Type",
+      "responseDescription": "Response Description",
+      "toEndpoint": "To Endpoint",
+      "fromEndpoint": "From Endpoint",
+      "responseStatus": "Response Status",
+      "additionalInfo": "Additional Info",
+      "timestamp": "Timestamp",
+      "exceptionMessage": "Exception Message",
+      "freeField": "Free Field",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "freeField14": "Free Field 14",
+      "freeField15": "Free Field 15",
+      "freeField16": "Free Field 16",
+      "freeField17": "Free Field 17",
+      "freeField18": "Free Field 18",
+      "freeField19": "Free Field 19",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

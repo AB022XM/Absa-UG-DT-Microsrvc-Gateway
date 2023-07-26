@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity CustomAudit.
+    -->
+    <changeSet id="20230725215014-1" author="jhipster">
+        <createTable tableName="custom_audit">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="absa_tran_ref" type="${uuidType}">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_custom_audit__absa_tran_ref" />
+            </column>
+            <column name="record_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="action_id" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="timestamp" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="old_value" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="new_value" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="change_resaon" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_5" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_6" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_7" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_8" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description_9" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_5" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_6" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_7" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_8" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_9" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_10" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_11" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_12" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_13" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_14" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_15" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_16" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_17" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_18" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_19" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_20" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_21" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_22" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_23" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_24" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_25" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_26" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_27" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="free_text_28" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_at" type="${datetimeType}">
+                <constraints nullable="false" />
+            </column>
+            <column name="created_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="updated_at" type="${datetimeType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="updated_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+        <dropDefaultValue tableName="custom_audit" columnName="timestamp" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="custom_audit" columnName="created_at" columnDataType="${datetimeType}"/>
+        <dropDefaultValue tableName="custom_audit" columnName="updated_at" columnDataType="${datetimeType}"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20230725215014-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/custom_audit.csv"
+                  separator=";"
+                  tableName="custom_audit"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="absa_tran_ref" type="${uuidType}"/>
+            <column name="record_id" type="string"/>
+            <column name="action_id" type="string"/>
+            <column name="timestamp" type="date"/>
+            <column name="old_value" type="string"/>
+            <column name="new_value" type="string"/>
+            <column name="change_resaon" type="string"/>
+            <column name="description" type="string"/>
+            <column name="description_1" type="string"/>
+            <column name="description_2" type="string"/>
+            <column name="description_3" type="string"/>
+            <column name="description_4" type="string"/>
+            <column name="description_5" type="string"/>
+            <column name="description_6" type="string"/>
+            <column name="description_7" type="string"/>
+            <column name="description_8" type="string"/>
+            <column name="description_9" type="string"/>
+            <column name="free_text_1" type="string"/>
+            <column name="free_text_2" type="string"/>
+            <column name="free_text_3" type="string"/>
+            <column name="free_text_4" type="string"/>
+            <column name="free_text_5" type="string"/>
+            <column name="free_text_6" type="string"/>
+            <column name="free_text_7" type="string"/>
+            <column name="free_text_8" type="string"/>
+            <column name="free_text_9" type="string"/>
+            <column name="free_text_10" type="string"/>
+            <column name="free_text_11" type="string"/>
+            <column name="free_text_12" type="string"/>
+            <column name="free_text_13" type="string"/>
+            <column name="free_text_14" type="string"/>
+            <column name="free_text_15" type="string"/>
+            <column name="free_text_16" type="string"/>
+            <column name="free_text_17" type="string"/>
+            <column name="free_text_18" type="string"/>
+            <column name="free_text_19" type="string"/>
+            <column name="free_text_20" type="string"/>
+            <column name="free_text_21" type="string"/>
+            <column name="free_text_22" type="string"/>
+            <column name="free_text_23" type="string"/>
+            <column name="free_text_24" type="string"/>
+            <column name="free_text_25" type="string"/>
+            <column name="free_text_26" type="string"/>
+            <column name="free_text_27" type="string"/>
+            <column name="free_text_28" type="string"/>
+            <column name="created_at" type="date"/>
+            <column name="created_by" type="string"/>
+            <column name="updated_at" type="date"/>
+            <column name="updated_by" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,181 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215005",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "branch",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "recordId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addressId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bankId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "branchSwiftCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "branchPhoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField14",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField15",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField16",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField17",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField18",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField20",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField21",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField22",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField23",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "branchFreeField24",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "RecordStatus",
+      "fieldValues": "ACTIVE (active),INACTIVE (inactive),PENDING (pending),INITIATED (initiated),APPROVED (approved)"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Branch",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "bank",
+      "otherEntityRelationshipName": "bank",
+      "relationshipName": "bank",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

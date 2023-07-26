@@ -1,0 +1,189 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215010",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "d_transaction_channel",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "billerId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentItemCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dtDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionReferenceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalTranid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "channelCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "channelName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "channelDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "chanelFreeText",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText14",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText15",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText16",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText17",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText18",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText20",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText21",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText22",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText23",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "chanelFreeText24",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "delflg",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DTransactionChannel",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dTransaction",
+      "otherEntityRelationshipName": "transaction",
+      "relationshipName": "dTransaction",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

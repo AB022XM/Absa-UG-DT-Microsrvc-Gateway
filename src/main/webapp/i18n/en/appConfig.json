@@ -1,0 +1,58 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "appConfig": {
+      "home": {
+        "title": "App Configs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new App Config",
+        "createOrEditLabel": "Create or edit a App Config",
+        "search": "Search for App Config",
+        "notFound": "No App Configs found"
+      },
+      "created": "A new App Config is created with identifier {{ param }}",
+      "updated": "A App Config is updated with identifier {{ param }}",
+      "deleted": "A App Config is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete App Config {{ id }}?"
+      },
+      "detail": {
+        "title": "App Config"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "recordId": "Record Id",
+      "configId": "Config Id",
+      "configName": "Config Name",
+      "configValue": "Config Value",
+      "configType": "Config Type",
+      "configDescription": "Config Description",
+      "configStatus": "Config Status",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField7": "Free Field 7",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "freeField14": "Free Field 14",
+      "freeField15": "Free Field 15",
+      "freeField16": "Free Field 16",
+      "freeField17": "Free Field 17",
+      "freeField18": "Free Field 18",
+      "freeField19": "Free Field 19",
+      "delflg": "Delflg",
+      "timestamp": "Timestamp",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "apps": "Apps"
+    }
+  }
+}

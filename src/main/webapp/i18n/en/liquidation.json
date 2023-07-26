@@ -1,0 +1,67 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "liquidation": {
+      "home": {
+        "title": "Liquidations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Liquidation",
+        "createOrEditLabel": "Create or edit a Liquidation",
+        "search": "Search for Liquidation",
+        "notFound": "No Liquidations found"
+      },
+      "created": "A new Liquidation is created with identifier {{ param }}",
+      "updated": "A Liquidation is updated with identifier {{ param }}",
+      "deleted": "A Liquidation is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Liquidation {{ id }}?"
+      },
+      "detail": {
+        "title": "Liquidation"
+      },
+      "id": "ID",
+      "recordId": "Record Id",
+      "serviceLevel": "Service Level",
+      "timestamp": "Timestamp",
+      "partnerCode": "Partner Code",
+      "amount": "Amount",
+      "currency": "Currency",
+      "receiverBankcode": "Receiver Bankcode",
+      "receiverAccountNumber": "Receiver Account Number",
+      "beneficiaryName": "Beneficiary Name",
+      "instructionId": "Instruction Id",
+      "senderToReceiverInfo": "Sender To Receiver Info",
+      "freeText1": "Free Text 1",
+      "freeText2": "Free Text 2",
+      "freeText3": "Free Text 3",
+      "freeText4": "Free Text 4",
+      "freeText5": "Free Text 5",
+      "freeText6": "Free Text 6",
+      "freeText7": "Free Text 7",
+      "freeText8": "Free Text 8",
+      "freeText9": "Free Text 9",
+      "freeText10": "Free Text 10",
+      "freeText11": "Free Text 11",
+      "freeText12": "Free Text 12",
+      "freeText13": "Free Text 13",
+      "freeText14": "Free Text 14",
+      "freeText15": "Free Text 15",
+      "freeText16": "Free Text 16",
+      "freeText17": "Free Text 17",
+      "freeText18": "Free Text 18",
+      "freeText19": "Free Text 19",
+      "freeText20": "Free Text 20",
+      "freeText21": "Free Text 21",
+      "freeText22": "Free Text 22",
+      "freeText23": "Free Text 23",
+      "freeText24": "Free Text 24",
+      "freeText25": "Free Text 25",
+      "freeText26": "Free Text 26",
+      "freeText27": "Free Text 27",
+      "freeText28": "Free Text 28",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

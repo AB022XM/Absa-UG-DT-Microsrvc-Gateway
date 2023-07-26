@@ -1,0 +1,64 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "bank": {
+      "home": {
+        "title": "Banks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank",
+        "createOrEditLabel": "Create or edit a Bank",
+        "search": "Search for Bank",
+        "notFound": "No Banks found"
+      },
+      "created": "A new Bank is created with identifier {{ param }}",
+      "updated": "A Bank is updated with identifier {{ param }}",
+      "deleted": "A Bank is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "billerId": "Biller Id",
+      "paymentItemCode": "Payment Item Code",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "amolDTransactionId": "Amol D Transaction Id",
+      "bankName": "Bank Name",
+      "bankSwiftCode": "Bank Swift Code",
+      "bankBranchId": "Bank Branch Id",
+      "bankPhoneNumber": "Bank Phone Number",
+      "bankEmail": "Bank Email",
+      "bankFreeField1": "Bank Free Field 1",
+      "bankFreeField3": "Bank Free Field 3",
+      "bankFreeField4": "Bank Free Field 4",
+      "bankFreeField5": "Bank Free Field 5",
+      "bankFreeField6": "Bank Free Field 6",
+      "bankFreeField7": "Bank Free Field 7",
+      "bankFreeField8": "Bank Free Field 8",
+      "bankFreeField9": "Bank Free Field 9",
+      "bankFreeField10": "Bank Free Field 10",
+      "bankFreeField11": "Bank Free Field 11",
+      "bankFreeField12": "Bank Free Field 12",
+      "bankFreeField13": "Bank Free Field 13",
+      "bankFreeField14": "Bank Free Field 14",
+      "bankFreeField15": "Bank Free Field 15",
+      "bankFreeField16": "Bank Free Field 16",
+      "bankFreeField17": "Bank Free Field 17",
+      "bankFreeField18": "Bank Free Field 18",
+      "bankFreeField19": "Bank Free Field 19",
+      "bankFreeField20": "Bank Free Field 20",
+      "bankFreeField21": "Bank Free Field 21",
+      "bankFreeField22": "Bank Free Field 22",
+      "bankFreeField23": "Bank Free Field 23",
+      "bankFreeField24": "Bank Free Field 24",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "delflg": "Delflg",
+      "status": "Status",
+      "bank": "Bank"
+    }
+  }
+}

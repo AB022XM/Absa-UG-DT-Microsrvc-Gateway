@@ -1,0 +1,59 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "defaultSettings": {
+      "home": {
+        "title": "Default Settings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Default Settings",
+        "createOrEditLabel": "Create or edit a Default Settings",
+        "search": "Search for Default Settings",
+        "notFound": "No Default Settings found"
+      },
+      "created": "A new Default Settings is created with identifier {{ param }}",
+      "updated": "A Default Settings is updated with identifier {{ param }}",
+      "deleted": "A Default Settings is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Default Settings {{ id }}?"
+      },
+      "detail": {
+        "title": "Default Settings"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "amolDTransactionId": "Amol D Transaction Id",
+      "transactionReferenceNumber": "Transaction Reference Number",
+      "token": "Token",
+      "thirdPartyDTransactionId": "Third Party D Transaction Id",
+      "defaultSettingCode": "Default Setting Code",
+      "jsonSettings": "Json Settings",
+      "appConfig": "App Config",
+      "appName": "App Name",
+      "freeField": "Free Field",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "freeField14": "Free Field 14",
+      "freeField15": "Free Field 15",
+      "freeField16": "Free Field 16",
+      "freeField17": "Free Field 17",
+      "freeField18": "Free Field 18",
+      "freeField19": "Free Field 19",
+      "timestamp": "Timestamp",
+      "recordStatus": "Record Status",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedby": "Updatedby"
+    }
+  }
+}

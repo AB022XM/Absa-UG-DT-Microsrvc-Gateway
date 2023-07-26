@@ -1,0 +1,217 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215014",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "custom_audit",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "recordId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "actionId",
+      "fieldType": "ServiceLevel",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "N,Y,P,X"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "oldValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "newValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "changeResaon",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText13",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText14",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText15",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText16",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText17",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText18",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText19",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText20",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText21",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText22",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText23",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText24",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText25",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText26",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText27",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "freeText28",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "CustomAudit",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

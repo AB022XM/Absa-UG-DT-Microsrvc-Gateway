@@ -1,0 +1,57 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "devices": {
+      "home": {
+        "title": "Devices",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Devices",
+        "createOrEditLabel": "Create or edit a Devices",
+        "search": "Search for Devices",
+        "notFound": "No Devices found"
+      },
+      "created": "A new Devices is created with identifier {{ param }}",
+      "updated": "A Devices is updated with identifier {{ param }}",
+      "deleted": "A Devices is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Devices {{ id }}?"
+      },
+      "detail": {
+        "title": "Devices"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "recordId": "Record Id",
+      "deviceId": "Device Id",
+      "deviceName": "Device Name",
+      "deviceType": "Device Type",
+      "deviceDescription": "Device Description",
+      "timestamp": "Timestamp",
+      "delflg": "Delflg",
+      "recordStatus": "Record Status",
+      "freeField": "Free Field",
+      "freeField1": "Free Field 1",
+      "freeField2": "Free Field 2",
+      "freeField3": "Free Field 3",
+      "freeField4": "Free Field 4",
+      "freeField5": "Free Field 5",
+      "freeField6": "Free Field 6",
+      "freeField7": "Free Field 7",
+      "freeField8": "Free Field 8",
+      "freeField9": "Free Field 9",
+      "freeField10": "Free Field 10",
+      "freeField11": "Free Field 11",
+      "freeField12": "Free Field 12",
+      "freeField13": "Free Field 13",
+      "freeField14": "Free Field 14",
+      "freeField15": "Free Field 15",
+      "freeField16": "Free Field 16",
+      "freeField17": "Free Field 17",
+      "freeField18": "Free Field 18",
+      "freeField19": "Free Field 19",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

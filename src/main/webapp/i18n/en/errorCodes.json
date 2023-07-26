@@ -1,0 +1,50 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "errorCodes": {
+      "home": {
+        "title": "Error Codes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Error Codes",
+        "createOrEditLabel": "Create or edit a Error Codes",
+        "search": "Search for Error Codes",
+        "notFound": "No Error Codes found"
+      },
+      "created": "A new Error Codes is created with identifier {{ param }}",
+      "updated": "A Error Codes is updated with identifier {{ param }}",
+      "deleted": "A Error Codes is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Error Codes {{ id }}?"
+      },
+      "detail": {
+        "title": "Error Codes"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "recordId": "Record Id",
+      "paymentItemCode": "Payment Item Code",
+      "dtDTransactionId": "Dt D Transaction Id",
+      "transactionReferenceNumber": "Transaction Reference Number",
+      "externalTranid": "External Tranid",
+      "errorCode": "Error Code",
+      "errorMessage": "Error Message",
+      "responseCode": "Response Code",
+      "responseMessage": "Response Message",
+      "responseBody": "Response Body",
+      "timestamp": "Timestamp",
+      "requestRef": "Request Ref",
+      "status": "Status",
+      "customerField1": "Customer Field 1",
+      "customerField2": "Customer Field 2",
+      "customerField3": "Customer Field 3",
+      "customerField4": "Customer Field 4",
+      "customerField5": "Customer Field 5",
+      "customerField6": "Customer Field 6",
+      "customerField7": "Customer Field 7",
+      "customerField8": "Customer Field 8",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By"
+    }
+  }
+}

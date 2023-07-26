@@ -1,0 +1,51 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "billerAccount": {
+      "home": {
+        "title": "Biller Accounts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Biller Account",
+        "createOrEditLabel": "Create or edit a Biller Account",
+        "search": "Search for Biller Account",
+        "notFound": "No Biller Accounts found"
+      },
+      "created": "A new Biller Account is created with identifier {{ param }}",
+      "updated": "A Biller Account is updated with identifier {{ param }}",
+      "deleted": "A Biller Account is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Biller Account {{ id }}?"
+      },
+      "detail": {
+        "title": "Biller Account"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "recordId": "Record Id",
+      "billerId": "Biller Id",
+      "billerName": "Biller Name",
+      "billerAccNumber": "Biller Acc Number",
+      "billerAccountDescription": "Biller Account Description",
+      "timestamp": "Timestamp",
+      "billerFreeField1": "Biller Free Field 1",
+      "billerFreeField2": "Biller Free Field 2",
+      "billerFreeField3": "Biller Free Field 3",
+      "billerFreeField4": "Biller Free Field 4",
+      "billerFreeField5": "Biller Free Field 5",
+      "billerFreeField6": "Biller Free Field 6",
+      "billerFreeField7": "Biller Free Field 7",
+      "billerFreeField8": "Biller Free Field 8",
+      "billerFreeField9": "Biller Free Field 9",
+      "billerFreeField10": "Biller Free Field 10",
+      "billerFreeField11": "Biller Free Field 11",
+      "billerFreeField12": "Biller Free Field 12",
+      "billerFreeField13": "Biller Free Field 13",
+      "delflg": "Delflg",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "updatedAt": "Updated At",
+      "updatedBy": "Updated By",
+      "billerAccount": "Biller Account",
+      "biller": "Biller"
+    }
+  }
+}

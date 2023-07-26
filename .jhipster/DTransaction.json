@@ -1,0 +1,377 @@
+{
+  "applications": "*",
+  "changelogDate": "20230725215001",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "d_transaction",
+  "fields": [
+    {
+      "fieldName": "absaTranRef",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["unique"]
+    },
+    {
+      "fieldName": "billerId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentItemCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dtDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amolDTransactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionReferenceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalTranid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "token",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transferId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "productCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "paymentChannelCode",
+      "fieldType": "Channel",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "ATM,CDM,POS,INTERNET_BANKING,MOBILE_BANKING"
+    },
+    {
+      "fieldName": "accountNumber",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "debitAmount",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "creditAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "settlementAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "settlementDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "isRetried",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "lastRetryDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "firstRetryDate",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "retryResposeCode",
+      "fieldType": "ErrorCodes",
+      "fieldValues": "SUCCESS (00),PENDING (01),UNKNOWN (99),FAILED (101),INVALIDACCOUNT (105),INVALIDBILLERCODE (106),INVALIDINVALIDAMOUNT (107),INVALIDPAYMENTTYPE (108),INVALIDPAYMENTMETHOD (109),INVALID_DEVICE_ID (110)"
+    },
+    {
+      "fieldName": "retryResponseMessage",
+      "fieldType": "ErrorMessage",
+      "fieldValues": "TRANSACTIONSUCCESS ((DTransaction suceessfully processed),TRANSACTIONFAILED (DTransaction failed ),TRANSACTIONPENDING (DTransaction pending ),TRANSACTIONINITIATED (DTransaction initiated ),TRANSACTIONAPPROVED (DTransaction approved ),TRANSACTIONUNKNOWN (DTransaction unknown !),TRANSACTIONINVALIDACCOUNT (Invalid account !),TRANSACTIONINVALIDBILLERCODE (Invalid biller code !),TRANSACTIONINVALIDINVALIDAMOUNT (Invalid invalid amount !),TRANSACTIONINVALIDPAYMENTTYPE (Invalid payment type !),TRANSACTIONINVALIDPAYMENTMETHOD (Invalid payment method !),TRANSACTIONINVALIDDEVICEID (Invalid device id !),TRANSACTIONUNKNOWNERROR (Unknown error)"
+    },
+    {
+      "fieldName": "retryCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "isRetriableFlg",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "doNotRetryDTransaction",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "TranStatus",
+      "fieldValues": "PENDING,SUCCESS,FAILED,UNKNOWN"
+    },
+    {
+      "fieldName": "statusCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "statusDetails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "retries",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "timestamp",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "postedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postedDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "internalErrorCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "externalErrorCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isCrossCurrency",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isCrossBank",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "creditAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "debitAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "customerNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranStatus",
+      "fieldType": "TranStatus",
+      "fieldValues": "PENDING,SUCCESS,FAILED,UNKNOWN"
+    },
+    {
+      "fieldName": "tranStatusDetails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField3",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField4",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField5",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField6",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField7",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField8",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField9",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField10",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField11",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField12",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField13",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tranFreeField14",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "tranFreeField15",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "tranFreeField16",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tranFreeField17",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "tranFreeField18",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "tranFreeField19",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "tranFreeField20",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tranFreeField21",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "tranFreeField22",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "tranFreeField23",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "tranFreeField24",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField25",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField26",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField27",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tranFreeField28",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DTransaction",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "dTransactionHistory",
+      "ownerSide": true,
+      "relationshipName": "transaction",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "dTransactionSummary",
+      "ownerSide": true,
+      "relationshipName": "transaction",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "dTransactionDetails",
+      "ownerSide": true,
+      "relationshipName": "transaction",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "amolDTransactions",
+      "otherEntityRelationshipName": "dTransaction",
+      "relationshipName": "transaction",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "dTransactionChannel",
+      "otherEntityRelationshipName": "dTransaction",
+      "relationshipName": "transaction",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "customer",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,68 @@
+{
+  "absaUgdtMicrosrvcGatewayApp": {
+    "paymentItems": {
+      "home": {
+        "title": "Payment Items",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Payment Items",
+        "createOrEditLabel": "Create or edit a Payment Items",
+        "search": "Search for Payment Items",
+        "notFound": "No Payment Items found"
+      },
+      "created": "A new Payment Items is created with identifier {{ param }}",
+      "updated": "A Payment Items is updated with identifier {{ param }}",
+      "deleted": "A Payment Items is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Payment Items {{ id }}?"
+      },
+      "detail": {
+        "title": "Payment Items"
+      },
+      "id": "ID",
+      "absaTranRef": "Absa Tran Ref",
+      "recordId": "Record Id",
+      "productCategoryId": "Product Category Id",
+      "billerId": "Biller Id",
+      "paymentItemCode": "Payment Item Code",
+      "paymentItemId": "Payment Item Id",
+      "paymentItemName": "Payment Item Name",
+      "paymentItemDescription": "Payment Item Description",
+      "isActive": "Is Active",
+      "hasFixedPrice": "Has Fixed Price",
+      "hasVariablePrice": "Has Variable Price",
+      "hasDiscount": "Has Discount",
+      "hasTax": "Has Tax",
+      "amount": "Amount",
+      "chargeAmount": "Charge Amount",
+      "hasChargeAmount": "Has Charge Amount",
+      "taxAmount": "Tax Amount",
+      "freeText": "Free Text",
+      "freeText1": "Free Text 1",
+      "freeText2": "Free Text 2",
+      "freeText3": "Free Text 3",
+      "freeText4": "Free Text 4",
+      "freeText5": "Free Text 5",
+      "freeText6": "Free Text 6",
+      "freeText7": "Free Text 7",
+      "freeText8": "Free Text 8",
+      "freeText9": "Free Text 9",
+      "freeText10": "Free Text 10",
+      "freeText11": "Free Text 11",
+      "freeText12": "Free Text 12",
+      "freeText13": "Free Text 13",
+      "freeText14": "Free Text 14",
+      "freeText15": "Free Text 15",
+      "freeText16": "Free Text 16",
+      "freeText17": "Free Text 17",
+      "freeText18": "Free Text 18",
+      "freeText19": "Free Text 19",
+      "delflg": "Delflg",
+      "status": "Status",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "deletedAt": "Deleted At",
+      "deletedBy": "Deleted By",
+      "biller": "Biller"
+    }
+  }
+}
