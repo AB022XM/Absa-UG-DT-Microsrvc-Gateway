@@ -1,6 +1,7 @@
 
 entity  AmolDTransactions
 {
+    id Integer unique ,
     absaTranRef UUID unique,
     billerId String ,
     dtDTransactionId String  ,
@@ -32,9 +33,9 @@ entity  AmolDTransactions
     beneficiaryName String,
     beneficiaryAccount String,
     beneficiaryBranchId String,
-    BeneficiaryphoneNumber String,
-    TranStatus TranStatus ,
-    Narration1 String,
+    beneficiaryphoneNumber String,
+    tranStatus TranStatus ,
+    narration1 String,
     narration2 String,
     narration3 String,
     taxAmount Integer,
@@ -107,14 +108,6 @@ entity  AmolDTransactions
 
 entity Customer {
     absaTranRef UUID unique,
-    billerId String required ,
-    paymentItemCode String required,
-    dtDTransactionId String  ,
-    amolDTransactionId String,
-    transactionReferenceNumber String,
-    token String,
-    transferId String ,
-    requestId Integer ,
     accountName String required,
     returnCode String required,
     returnMessage String required,
@@ -170,13 +163,7 @@ entity Customer {
 
 entity AccountDetails {
     absaTranRef UUID unique,
-    billerId String required ,
-    paymentItemCode String required,
-    dtDTransactionId String  ,
-    amolDTransactionId String,
-    transactionReferenceNumber String,
-    token String,
-    transferId String ,
+    customerId String ,
     requestId Integer ,
     accountName String required,
     returnCode String required,
@@ -231,7 +218,7 @@ entity AccountDetails {
 
 }
 
-entity DTransaction
+entity Transaction
 {
     absaTranRef UUID unique,
     billerId String required ,
@@ -271,14 +258,14 @@ entity DTransaction
     externalErrorCode String,
     isCrossCurrency Boolean,
     isCrossBank Boolean,
-    Currency String required,
+    currency String required,
     timestamp ZonedDateTime ,
     creditAccount String,
     debitAccount String,
     phoneNumber String,
     customerNumber String,
-    TranStatus TranStatus ,
-    TranStatusDetails  String ,
+    tranStatus TranStatus ,
+    tranStatusDetails  String ,
     retries Integer,
     timestamp ZonedDateTime,
     postedBy String,
@@ -320,7 +307,7 @@ entity DTransaction
     createdAt ZonedDateTime required,
     createdBy String,
     updatedAt ZonedDateTime ,
-    updatedBy String,
+    updatedBy String
 
 }
 
@@ -375,7 +362,7 @@ entity BlockedAccounts
 
 
 
-entity DTransactionDetails {
+entity TransactionDetails {
     absaTranRef UUID unique,
     billerId String required ,
     paymentItemCode String required,
@@ -408,9 +395,9 @@ entity DTransactionDetails {
     beneficiaryName String,
     beneficiaryAccount String,
     beneficiaryBranchId String,
-    BeneficiaryphoneNumber String,
-    TranStatus TranStatus ,
-    Narration1 String,
+    beneficiaryPhoneNumber String,
+    tranStatus TranStatus ,
+    narration1 String,
     narration2 String,
     narration3 String,
     narration4 String,
@@ -589,7 +576,7 @@ entity Biller {
     createdAt ZonedDateTime required,
     createdBy String,
     updatedAt ZonedDateTime ,
-    updatedBy String,
+    updatedBy String
 }
 
 enum BillerCategory
@@ -622,7 +609,7 @@ entity BillerAccount {
     createdAt ZonedDateTime required,
     createdBy String,
     updatedAt ZonedDateTime ,
-    updatedBy String,
+    updatedBy String
 }
 
 
@@ -631,10 +618,10 @@ entity ProductCategory {
     absaTranRef UUID unique,
     billerId String ,
     recordId String   ,
-    ProductCategoryCode String required,
-    ProductCategoryName String required,
-    ProductCategoryDescription String,
-    ProductCategoryImage String,
+    productCategoryCode String required,
+    productCategoryName String required,
+    productCategoryDescription String,
+    productCategoryImage String,
     productFreeField1 String,
     productFreeField2 TextBlob,
     productFreeField3 String,
@@ -698,19 +685,15 @@ entity PaymentItems
     createdAt ZonedDateTime,
     updatedAt ZonedDateTime,
     deletedAt ZonedDateTime,
-    deletedBy String,
+    deletedBy String
 
 
 
 }
 
-entity DTransactionChannel {
+entity TransactionChannel {
     absaTranRef UUID unique,
-    billerId String required ,
-    paymentItemCode String required,
-    dtDTransactionId String  ,
-    transactionReferenceNumber String,
-    externalTranid String,
+    channelId String,
     channelCode String required,
     channelName String required,
     channelDescription String,
@@ -743,13 +726,15 @@ entity DTransactionChannel {
     createdAt ZonedDateTime ,
     createdBy String ,
     updatedAt ZonedDateTime ,
-    updatedBy String
-    delflg Boolean,
+    updatedBy String,
+    delflg Boolean
 
 }
 
 entity RequestInfo {
-    recordId String   ,
+    absaTranRef UUID unique,
+    dtTransactionId String  ,
+    transactionReferenceNumber String,
     transactionId String,
     requestData String,
     paramList String,
@@ -768,7 +753,7 @@ entity RequestInfo {
     createdAt ZonedDateTime required,
     createdBy String,
     updatedAt ZonedDateTime ,
-    updatedBy String,
+    updatedBy String
 
 }
 
@@ -810,9 +795,7 @@ enum ServiceLevel {
 }
 
 entity CustomAuditHistory{
-
-    id Integer  ,
-    recordId String   ,
+    recordId UUID unique,
     actionId ServiceLevel required,
     timestamp ZonedDateTime,
     oldValue String,
@@ -859,7 +842,7 @@ entity CustomAuditHistory{
     createdAt ZonedDateTime required,
     createdBy String,
     updatedAt ZonedDateTime ,
-    updatedBy String,
+    updatedBy String
 
 }
 
@@ -922,57 +905,9 @@ entity CustomAudit{
 }
 
 
-entity Liquidation
-{
-    recordId String   ,
-    serviceLevel ServiceLevel required,
-    timestamp ZonedDateTime required,
-    partnerCode String required,
-    amount String required,
-    currency String required,
-    receiverBankcode String required,
-    receiverAccountNumber String required,
-    beneficiaryName String required,
-    instructionId String required,
-    senderToReceiverInfo String required,
-    freeText1 String required,
-    freeText2 String required,
-    freeText3 String required,
-    freeText4 String required,
-    freeText5 String required,
-    freeText6 String required,
-    freeText7 String required,
-    freeText8 String required,
-    freeText9 String required,
-    freeText10 String required,
-    freeText11 String required,
-    freeText12 String required,
-    freeText13 String required,
-    freeText14 String required,
-    freeText15 String required,
-    freeText16 String required,
-    freeText17 String required,
-    freeText18 String required,
-    freeText19 String required,
-    freeText20 String required,
-    freeText21 String required,
-    freeText22 String required,
-    freeText23 String required,
-    freeText24 String required,
-    freeText25 String required,
-    freeText26 String required,
-    freeText27 String required,
-    freeText28 String required,
-    createdAt ZonedDateTime ,
-    createdBy String ,
-    updatedAt ZonedDateTime ,
-    updatedBy String
 
 
-
-}
-
-entity DTransactionSummary {
+entity TransactionSummary {
     absaTranRef UUID unique,
     billerId String required ,
     paymentItemCode String required,
@@ -1001,11 +936,6 @@ entity DTransactionSummary {
 entity ErrorCodes{
     absaTranRef UUID unique,
     recordId String required ,
-    paymentItemCode String required,
-    dtDTransactionId String  ,
-    transactionReferenceNumber String,
-    externalTranid String,
-    recordId String   ,
     errorCode String required,
     errorMessage ErrorMessage,
     responseCode String,
@@ -1029,9 +959,9 @@ entity ErrorCodes{
 
 }
 
-entity DTransactionHistory {
-
-    recordId String   ,
+entity TransactionHistory {
+    absaTranRef UUID unique,
+    recordId UUID    ,
     transferId String ,
     productCode String required,
     paymentChannelCode Channel required,
@@ -1059,9 +989,9 @@ entity DTransactionHistory {
     beneficiaryName String,
     beneficiaryAccount String,
     beneficiaryBranchId String,
-    BeneficiaryPhoneNumber String,
-    TranStatus TranStatus ,
-    Narration1 String,
+    beneficiaryPhoneNumber String,
+    tranStatus TranStatus ,
+    narration1 String,
     narration2 String,
     narration3 String,
     modeOfPayment ModeOfPayment,
@@ -1095,7 +1025,7 @@ entity DTransactionHistory {
 }
 
 entity Apps {
-    recordId String   ,
+    recordId UUID unique  ,
     configId String ,
     appId String required,
     appCurrentVersion String required,
@@ -1163,7 +1093,7 @@ entity AppConfig {
 
 
 entity PaymentConfig{
-    recordId String   ,
+    recordId UUID unique  ,
     paymentId String ,
     paymentName String required,
     paymentType String required,
@@ -1253,7 +1183,10 @@ entity IncomingJSONRequest {
 }
 
 entity OutgoingJSONResponse {
-    recordId String   ,
+    absaTranRef UUID unique,
+    dtDTransactionId String  ,
+    amolDTransactionId String,
+    transactionReferenceNumber String,
     responseId String ,
     transactionId String,
     responseJson TextBlob required,
@@ -1292,7 +1225,7 @@ entity OutgoingJSONResponse {
 
 entity IncomingJSONResponse {
     absaTranRef UUID unique,
-    dtDTransactionId String  ,
+    dtDTransactionId String unique ,
     amolDTransactionId String,
     transactionReferenceNumber String,
     token String,
@@ -1344,8 +1277,7 @@ enum Channel {
 entity DefaultSettings
 {
     absaTranRef UUID unique,
-    settingsRefNumber String,
-    thirdPartyDTransactionId String,
+    settingsRefNumber String ,
     defaultSettingCode String ,
     jsonSettings TextBlob,
     appConfig TextBlob,
@@ -1374,13 +1306,14 @@ entity DefaultSettings
     createdAt ZonedDateTime ,
     createdBy String ,
     updatedAt ZonedDateTime ,
-    updatedby String
+    updatedBy String
 
 
 }
 
 entity GenericConfigs
 {
+
     absaTranRef UUID unique,
     recordId String   ,
     configId String,

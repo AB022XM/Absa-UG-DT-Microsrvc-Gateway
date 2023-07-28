@@ -26,3 +26,31 @@ $border-radius-sm: 0.1rem;
 // Settings for the `<body>` element.
 
 $body-bg: #ffffff;
+$body-color: #fa551e;
+$body-link-color: #fa551e;
+$body-link-hover-color: #500a28;
+$body-link-active-color: #500a28;
+
+// Typography:
+// Define common typography styles.
+
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+// Layout:
+// Define common layout styles.
+
+$layout-padding: 1.5rem;
+$layout-padding-lg: 2rem;
+$layout-padding-sm: 1rem;
+$layout-padding-xl: 2rem;
+$layout-margin: 1.5rem
+$layout-margin-lg: 2rem;
+$layout-margin-sm: 1rem;
+$layout-margin-xl: 2rem;
+
+
+
+
+
+
